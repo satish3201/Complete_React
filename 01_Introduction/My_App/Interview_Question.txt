@@ -1,0 +1,140 @@
+1) What is React ??
+React, often referred to as React.js or ReactJS, is an open-source JavaScript library developed by Facebook for building user interfaces (UIs). 
+Its primary purpose is to enable developers to create dynamic and interactive web applications efficiently.
+
+2) Library Vs Framework ??
+A library is a collection of pre-written, reusable code for specific tasks, 
+giving the developer control over the application's flow by calling the library's functions when needed. 
+A framework, on the other hand, is a broader, pre-written structure and set of rules that dictates the application's architecture, 
+controlling the flow by calling the developer's code at predefined points, which is known as inversion of control. 
+
+Library
+What it is: A set of tools, like a toolbox, containing pre-written code (functions, classes, etc.) for specific jobs. 
+Control: The developer is in charge of the program's control flow, deciding when and how to use the library. 
+Scope: Generally more specialized and focused on specific tasks. 
+Example: jQuery, a JavaScript library that helps developers manipulate HTML and CSS. 
+Framework
+What it is: A pre-defined skeleton or structure for an application, providing a complete architecture that the developer builds their code into. 
+Control: The framework controls the overall flow of the application and dictates when and where your code is called, a concept called "inversion of control". 
+Scope: More comprehensive and provides a broader set of functionality and conventions for building the application. 
+Example: Angular or Vue, JavaScript frameworks that provide a complete structure for building web applications. 
+
+
+
+3) single page application vs multi page application
+A Single Page Application (SPA) loads a single HTML page and dynamically updates content with JavaScript, 
+providing a smooth, app-like experience but requiring extra effort for SEO. 
+A Multi-Page Application (MPA) loads a new page from the server with every user interaction, 
+which is better for SEO, large content sites, and complex applications but can feel slower
+
+
+
+4) What is SEO ??
+Search Engine Optimization
+SEO, or Search Engine Optimization, is the process of improving a website's visibility in search engine results pages (SERPs) to increase organic, unpaid traffic
+
+
+5) Why Use React ??
+Use React to build efficient, dynamic, and scalable user interfaces (UIs) due to its component-based architecture, virtual DOM for faster rendering, and large community support.
+DRY -> Dont Repeat Yourself 
+
+
+6) What Is Component Based Architechture ??
+a software design approach that structures an application as a collection of self-contained, 
+reusable software components that communicate through defined interfaces
+
+
+7) What are Package Managers ??
+Package managers are software tools that automate the installation, removal, updating, and configuration of 
+software and their dependencies. 
+
+8) npm and npx ??
+
+
+9) What is JSX ??
+-> JAvascript XML. It has HTML Like structure
+JSX, or JavaScript XML, is a syntax extension for JavaScript that allows developers to write HTML-like code directly within their JavaScript files. It is primarily used with React to describe the structure and appearance of user interfaces.
+
+
+10) Type of Components ??
+Functiona Based and Class Based
+
+11) JSX Feature ??
+HTML-like structure within JavaScript, the ability to embed JavaScript expressions directly in the markup using curly braces, 
+and the use of camelCase for HTML attributes.
+
+12) React Fragments ??
+Using Two methods -> React.Fragments and <></>
+
+13) JSX syntax and Rules ?
+
+
+14) Props In React ??
+
+15) State Variable ??
+
+16) useState ??
+
+17) onChange in Input tag 
+
+18) React Architechture -> virtual dom
+
+19) Rendering and Rerendering :
+In React, "rendering" refers to the process by which React determines what to display on the screen based on the current state and props of your components. It's the core mechanism for updating the User Interface (UI).
+The Rendering Process:
+Initial Render: When your React application first loads, React starts at the root component and recursively calls the render logic (the function for functional components or the render() method for class components) of each component in the tree. This process generates a "virtual DOM" representation of the UI.
+Re-renders (Updates): Subsequent renders are triggered primarily by changes in a component's state or props. When state or props change, React marks the affected component (and its children) as needing an update.
+
+
+
+20) What is REGEX or Regular expressions ??
+
+
+
+21) Bind and Arrow functions ??
+
+
+function great() {
+
+}
+
+const great = () => {
+
+}
+
+
+22) Conditional Rendering in React
+
+
+23) If, Ternery, props
+
+
+24) Hide and Show
+
+25) List and Keys in React 
+
+26) Routing In React ?? 
+
+27) Hooks in React ?? ( IMP )
+Hooks let you use different React features from your components. You can either use the built-in Hooks or combine them to build your own. This page lists all built-in Hooks in React.
+
+Built-In Hooks and Custom Hooks
+
+
+- useState hook : The useState hook allows you to add state to a functional component. It takes an initial value as an argument and returns an array with two elements: the current state value and a function to update it. 
+
+- useEffect hook : The useEffect hook allows you to perform side effects in a functional component. Side effects include things like fetching data from an API, updating the DOM, or subscribing to an event.
+
+- useRef hook : useRef is a React Hook that lets you remember a value between re-renders — without causing your component to re-render.
+
+- useContext hook : The useContext hook allows you to access a context object in a functional component. Context is a way to pass data down the component tree without having to pass props manually.
+
+Here’s an example of how to use useContext to access a theme context:
+
+- useReducer hook : useReducer is a React Hook that helps you manage complex state logic. It’s similar to useState,
+but instead of updating the state directly, you use a reducer function that decides how the state should change.
+
+- useCallback : The useCallback hook allows you to memoize a function so that it’s only re-created when its dependencies change. This can help improve performance by preventing unnecessary re-renders.
+
+
+-useMemo hook : The useMemo hook allows you to memoize a value so that it’s only re-computed when its dependencies change. This can help improve performance by preventing unnecessary re-computations.
