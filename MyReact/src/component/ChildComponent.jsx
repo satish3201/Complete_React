@@ -13,3 +13,5 @@ function ChildComponent({ onDataReceived }) {
 }
 
 export default ChildComponent;
+
+

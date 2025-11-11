@@ -68,6 +68,7 @@ const SignUp = () => {
 
       <div>
         <p>Name: {name}</p>
+        <p>number: {number}</p>
       </div>
     </>
   );

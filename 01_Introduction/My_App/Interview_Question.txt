@@ -138,3 +138,49 @@ but instead of updating the state directly, you use a reducer function that deci
 
 
 -useMemo hook : The useMemo hook allows you to memoize a value so that it’s only re-computed when its dependencies change. This can help improve performance by preventing unnecessary re-computations.
+
+- useParams hooks : useParams is a hook provided by React Router that allows functional components to access dynamic parameters from the URL. It is a key tool for building dynamic content rendering based on the route's parameters.
+
+-useNavigate
+
+
+28 ) Link
+
+
+29) Custom Hooks :  Custom Hooks in React are JavaScript functions designed to extract and reuse stateful logic from functional components. They allow developers to encapsulate common patterns and behaviors, making code more modular, readable, and maintainable.
+
+
+30) Props Drilling : -  Prop drilling refers to the process of passing props down through multiple layers of components to reach a deeply nested component that requires access to that data.
+
+
+31) Context API : The Context API in React is a built-in feature that enables sharing data across the entire component tree without the need for "prop drilling."
+
+To start using the Context API, the first thing you need to do is to create a context using the createContext() method. This function returns a context object with two components – a Provider and a Consumer.
+
+The Provider is used to wrap the part of your component tree where you want the context to be available. It accepts a compulsory value prop that holds the data you want to share across other components. When the value prop of the Provider changes, all descendants that consume the context will re-render.
+
+The Consumer allows any descendant component to use the context. It takes a function as a child, where the function argument is the current context value. In modern React, the useContext hook is often used instead of Consumer for better readability and simplicity.
+
+
+32) Recoil vs. Zustand vs. Redux Vs Context
+
+33) Throttling and Debouncing
+
+34) Lazy Loading and Suspense
+Lazy loading in React is a technique used to defer the loading of components or resources until they are actually needed, rather than loading them all at once during the initial application load. This optimizes performance by reducing the initial bundle size and improving the perceived loading speed for users.
+
+React.Suspense: This component lets you "wait" for other components to load dynamically. You wrap your React.lazy() component with Suspense and provide a fallback prop, which renders a placeholder UI (like a loading spinner) while the lazy component is being fetched and rendered.
+
+35) React Redux 
+
+36) Authentication (AuthN) = confirm who the user is (login).
+
+Authorization (AuthZ) = what that user is allowed to do (roles/permissions).
+
+Tokens: Short-lived access tokens (used to access APIs) + longer-lived refresh tokens (used to mint new access tokens).
+
+Storage tradeoffs: localStorage/sessionStorage are vulnerable to XSS. HttpOnly cookies are safer for refresh tokens but require CSRF protection for stateful cookie flows. A good pattern for SPAs: keep access token in memory (not persisted) and store refresh token in an HttpOnly secure cookie.
+
+OAuth / OIDC for third-party logins (Google/GitHub) — for SPAs use PKCE or rely on server-side flow.
+
+MFA, email verification, password reset, rate-limiting and logging are essential production features
